@@ -1,4 +1,9 @@
 package 循环结构;
+/**
+ * @author 		崔秦
+ * @function	循环
+ * 
+ */
 
 public class 分支语句 {
 	public static void main(String[] args)

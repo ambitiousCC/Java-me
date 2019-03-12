@@ -1,6 +1,6 @@
 package 类和对象;
 
-//三种最常见的成员：构造器、成员变量、方法
+//三种最常见的成员：构造器、成员变量、方法  、、初始化块是可出现的第四种，后面介绍
 /**
  * 定义类的一般语法
  * [修饰符] class 类名
@@ -54,8 +54,12 @@ package 类和对象;
 public class 定义类 {
 	public String name;
 	public int age;
-	public void say(String content)
+	public static void say(String content)
 	{
 		System.out.println(content);
+	}
+	public static void main(String[] args)
+	{
+		System.out.println("ag");
 	}
 }
