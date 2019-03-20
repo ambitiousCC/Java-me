@@ -12,7 +12,7 @@ package Hello_Java;
 public class 对于精度数的第一次简介 {
 	public static void main(String[] args)
 	{
-		//float型需要在赋值的数据后面加上f/F，同理double型需要加入d/D
+		//float型需要在赋值的数据后面加上f/F，同理double型需要加入d/D，默认输入的小数类型都是double
 		
 		float af = 3.343434f;
 		

@@ -47,6 +47,7 @@ public class 深入了解数组 {
 		}
 		//emmmm这里跳过去了使用Arrays工具的方法，注意复习 
 		/**
+		 * 首先要引入 java.util.*;
 		 * Arrays.equals(array0,array1)	比较两个数组是否相等
 		 * Arrays.copyOf(array,num)		复制一个拥有和array中元素一致,长度为num的数组
 		 * Arrays.toString(array)		将数组中的元素化为字符串输出

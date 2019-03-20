@@ -18,6 +18,6 @@ public class 对访问控制符的运用 {
 		System.out.print("成功利用正确方法setter设置好变量以后:"+p.getName());
 	}
 	/**
-	 * 不能直接修改隐藏的变量
+	 * 	不能直接修改隐藏的变量
 	 */
 }

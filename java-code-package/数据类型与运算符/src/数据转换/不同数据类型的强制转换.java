@@ -15,8 +15,10 @@ public class 不同数据类型的强制转换 {
 	{
 		//字符串转化为int整数类型
 		String a = "";
+		String b = "123";
 		//包装类型
 		//Integer（整数） 方法
+		//int --> Integer.parseInt
 		//boolean --> Boolean.parseBoolean
 		//byte --> Byte.parseByte
 		//short --> Short.parseShort
@@ -24,7 +26,7 @@ public class 不同数据类型的强制转换 {
 		//float --> Float.parseFloat
 		//double --> Double.parseDouble
 		boolean iValue = Boolean.parseBoolean(a);
-		
-		System.out.print(iValue);
+		int in = Integer.parseInt(b);
+		System.out.print(iValue + b);
 	}
 }

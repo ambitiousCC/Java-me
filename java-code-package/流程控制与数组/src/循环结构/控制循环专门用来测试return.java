@@ -13,7 +13,7 @@ public class 控制循环专门用来测试return {
 				{
 					System.out.println("k的值为："+k);
 					if(k ==4)
-						//测试发现，这里真的直接跳出了这个函数！！
+						//测试发现，这里真的直接跳出了这个方法！！
 						return;
 				}
 			}
