@@ -1,6 +1,6 @@
 package 内部类;
 
-public class 匿名函数的等价代码 implements 内部类.Product {
+public class 匿名内部类的等价代码 implements 内部类.Product {
 	public double getPrice()
 	{
 		return 531.8;
@@ -11,7 +11,7 @@ public class 匿名函数的等价代码 implements 内部类.Product {
 	}
 	public static void main(String[] args)
 	{
-		匿名函数的等价代码 p = new 匿名函数的等价代码();
+		匿名内部类的等价代码 p = new 匿名内部类的等价代码();
 		System.out.println("买"+p.getName()+"花了"+p.getPrice()+"元");
 	}
 }

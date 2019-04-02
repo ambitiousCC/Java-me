@@ -8,7 +8,7 @@ public class 基本数据类型的包装类 {
 /**
  * 	注释引用的文件已经介绍了八种基本数据类型的包装方法
  * 	byte/short/long/float/double/boolean的包装类名称仅首字母大写
- * 	特殊：	int	--	Interger
+ * 	特殊：	int	--	Integer
  * 			char--	Character
  */
 
