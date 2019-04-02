@@ -66,17 +66,17 @@ public class Stream操作集合 {
  * 			sorted()	用于保证流中的元素在后续的访问中处于有序状态。这是一个有状态的方法
  * 			limit(long maxSize)保证对该流的后续访问中最大允许访问的元素的个数，又是一个有状态的、短路的方法
  * 		末端方法：
- * 			for(Consumer action)
- * 			toArray()
- * 			reduce()
- * 			min()
+ * 			for(Consumer action)			遍历流中的所有元素，对每个元素都执行action
+ * 			toArray()						转换成为数组
+ * 			reduce()						合并流中的元素
+ * 			min()							返回最大、小值
  * 			max()
- * 			count()
- * 			anyMatch()
- * 			allMatch(Predicate predicate)
- * 			noneMatch(Predicate predicate)
- * 			findFirst()
- * 			findAny()
+ * 			count()							所有元素的数量
+ * 			anyMatch(Predicate predicate)	判断是否至少包含一个元素符合predicate条件						
+ * 			allMatch(Predicate predicate)	判断流中是否每个元素都符合predicate条件
+ * 			noneMatch(Predicate predicate)	判断流中是否所有元素都不符合predicate条件
+ * 			findFirst()						返回流中的第一个元素
+ * 			findAny()						返回流中的任意一个元素
  */
 	
 }
