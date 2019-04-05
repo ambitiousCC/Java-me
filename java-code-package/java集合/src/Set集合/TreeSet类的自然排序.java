@@ -27,5 +27,8 @@ public class TreeSet类的自然排序 {
 		//需要向treeset类中添加的应该是同一个类的对象
 //		ts.add(new String("cuiqin"));
 //		ts.add(new Date());
+		
+		//补充TreeSet 集合判断两个对象是否相等的唯一标标准是：
+		//两个对象通过compareTo(Object obj)方法比较是否返回0，如果通过compareTo(Object obj)方法比较返回0，TreeSet则会认为它们相等；否则就认为它们不相等
 	}
 }

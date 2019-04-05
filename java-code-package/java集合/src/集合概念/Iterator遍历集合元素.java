@@ -15,6 +15,8 @@ import java.util.*;
  *  ~	Object next():		删除集合里面的下一个元素
  *  ~	void remove():		删除集合里面的上一次next方法中的返回额元素
  *  ~	void forEachRemaining(Consumer action)	这是新增的默认方法：可以被用来使用遍历集合元素
+ *  
+ *  发现：只能删除不能增加，只能迭代下一个元素
  */
 
 //for example
@@ -28,7 +30,7 @@ public class Iterator遍历集合元素 {
 		books.add("cuiqinhaha");
 		//获取books集合对应的迭代器
 		Iterator it = books.iterator();
-		while(it.hasNext())
+		while(it.hasNext())//只能迭代下一个元素
 		{
 			//it.next()方法返回的数据类型是object 类型，因此需要强制转换
 			String book = (String)it.next();
