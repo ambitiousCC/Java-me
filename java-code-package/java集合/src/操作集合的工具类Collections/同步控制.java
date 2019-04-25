@@ -1,4 +1,4 @@
-package 操作集合的工具类Collections;
+ 	 	package 操作集合的工具类Collections;
 
 import java.util.*;
 
@@ -16,5 +16,6 @@ public class 同步控制 {
 		Set s = Collections.synchronizedSet(new HashSet());
 		Map m = Collections.synchronizedMap(new HashMap());
 		//牛逼！直接获取线程安全的方法
+		
 	}
 }
