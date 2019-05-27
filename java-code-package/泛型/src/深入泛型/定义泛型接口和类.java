@@ -31,9 +31,9 @@ public class 定义泛型接口和类<T>//使用泛式声明
 	{
 		return this.info;
 	}
+	
 	public static void main(String[] args)
 	{
-		
 		//both XX<String> and XX<Double> are the children of XX<T> 
 		
 		//传给字符串类型，构造器参数只能是字符串类型
