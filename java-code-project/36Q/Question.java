@@ -18,7 +18,8 @@ public class Question extends JFrame implements ActionListener,Runnable {
 	Thread th;
 	boolean flag = false;
 	
-	String[] qs = {"假如可以选择世界上任何人，你希望邀请谁共进晚餐？",
+	String[] qs = {
+			"假如可以选择世界上任何人，你希望邀请谁共进晚餐？",
 			"你希望成名吗？在哪一方面？", 
 			"拨打电话前，你会先练习要说的话吗？为什么？",
 			"对你来说，怎样才算是“完美”的一天？",
@@ -62,9 +63,9 @@ public class Question extends JFrame implements ActionListener,Runnable {
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		th = new Thread(this);
-		
+
 		label = new JLabel("随机数", SwingConstants.CENTER);
-		label.setFont(new Font("宋体", Font.BOLD, 24));
+		label.setFont(new Font("宋体", Font.BOLD, 30));
 		btn1 = new JButton("开始");
 		btn2 = new JButton("停止");
 		this.add(btn1, BorderLayout.NORTH);
@@ -89,7 +90,22 @@ public class Question extends JFrame implements ActionListener,Runnable {
 		while(flag) {
 			Random r = new Random();
 			int ran = r.nextInt(qs.length);
-			label.setText(""+qs[ran]);
+
+			StringBuffer stringBuffer = new StringBuffer(qs[ran]);
+			int times = 0;
+			for(int i=0;i<qs[ran].length();i++) {
+				String s = qs[ran].charAt(i)+"";
+				if(s.equals("，")||s.equals("？")||s.equals("：")||s.equals("。")) {
+					stringBuffer.insert((i+1+"<br>".length()*times),"<br>");
+					times++;
+				} else if (s.equals("（")) {
+					stringBuffer.insert((i+"<br>".length()*times),"<br>");
+					times++;
+				}
+			}
+			times = 0;
+			String txt = "<html><body>"+stringBuffer+"</body></html>";
+			label.setText(txt);
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
